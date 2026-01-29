@@ -58,11 +58,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN  &trans        &trans        &kp LS(F4)                    &trans       &kp LC(HOME)    &kp LC(END)     &trans           &trans             &trans
-&trans           &trans       &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &trans                        &trans       &trans          &trans          &trans           &trans             &kp HOME
-&trans           &trans       &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &trans                        &kp APOS     &kp EQUAL       &kp UP_ARROW    &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kp END
-&trans           &trans       &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans      &trans    &trans  &kp KP_PLUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE      &kp BSLH
-                                             &trans        &kp NUMBER_0  &trans      &trans    &trans  &trans       &trans          &trans
+&kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN  &trans        &trans        &kp LS(F4)                          &trans       &kp LC(HOME)    &kp LC(END)     &trans           &trans             &trans
+&trans           &trans       &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &trans                              &trans       &trans          &trans          &trans           &trans             &kp HOME
+&trans           &trans       &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &trans                              &kp APOS     &kp EQUAL       &kp UP_ARROW    &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kp END
+&trans           &trans       &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans      &trans          &trans  &kp KP_PLUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE      &kp BSLH
+                                             &trans        &kp NUMBER_0  &trans      &kp CAPSLOCK    &trans  &trans       &trans          &trans
             >;
         };
 
