@@ -26,8 +26,21 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp DEL
+                           &kp LALT  &kp LGUI  &mo 2   &kp SPACE    &kp RET   &mo 3   &kp BSPC  &kp DEL
             >;
+        };
+
+        default_layer2 {
+            display-name = "Base";
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp B                          &kp J   &kp L     &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp LSHFT  &kp A   &kp R   &kp S     &kp T     &kp G                          &kp M   &kp N     &kp E      &kp I    &kp O     &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp D     &kp V   &kp LBKT     &kp RBKT  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 2   &kp SPACE    &kp RET   &mo 3   &kp BSPC  &kp DEL
+            >;
+
+            label = "Colemak";
         };
 
         lower_layer {
@@ -40,10 +53,10 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &trans                  &trans            &trans              &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &none                   &none             &none               &none     &none     &none
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                               &kp F7                  &kp F8            &kp F9              &kp F10   &kp F11   &kp F12
 &trans      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                            &kp CARET               &kp AMPS          &kp KP_MULTIPLY     &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &kp LC(LA(DOWN_ARROW))  &kp K_APPLICATION    &trans  &kp LC(LA(DOWN_ARROW))  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LBRC  &kp RBRC  &kp PIPE
+&trans      &none         &none         &none         &none         &kp LC(LA(DOWN_ARROW))  &kp K_APPLICATION    &trans  &kp LC(LA(DOWN_ARROW))  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans                  &trans               &trans  &trans                  &trans            &trans
             >;
         };
@@ -58,10 +71,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN  &trans        &trans        &kp LS(F4)                          &trans       &kp LC(HOME)    &kp LC(END)     &trans           &trans             &trans
-&trans           &trans       &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &trans                              &trans       &trans          &trans          &trans           &trans             &kp HOME
-&trans           &trans       &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &trans                              &kp APOS     &kp EQUAL       &kp UP_ARROW    &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kp END
-&trans           &trans       &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans      &trans          &trans  &kp KP_PLUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE      &kp BSLH
+&kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN  &none         &none         &kp LS(F4)                          &none        &kp LC(HOME)    &kp LC(END)     &none            &none              &none
+&trans           &none        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &none                               &none        &none           &none           &none            &none              &kp HOME
+&trans           &none        &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &none                               &kp APOS     &kp EQUAL       &kp UP_ARROW    &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kp END
+&trans           &none        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &none       &to 0           &to 1   &kp KP_PLUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE      &kp BSLH
                                              &trans        &kp NUMBER_0  &trans      &kp CAPSLOCK    &trans  &trans       &trans          &trans
             >;
         };
