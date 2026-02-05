@@ -81,7 +81,7 @@
         };
 
         Mouse {
-            display-name = "Raise";
+            display-name = "Mouse";
             bindings = <
 &none  &none     &none     &none      &none      &none                       &none       &none           &none           &none         &none            &none
 &none  &none     &none     &none      &none      &none                       &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
